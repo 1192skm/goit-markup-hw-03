@@ -203,6 +203,9 @@ body {
 .buttons {
     margin-bottom: 72px;
 }
+.picture {
+    margin-bottom: 32px;
+}
 .category {
     padding-bottom: 32px;
 }
