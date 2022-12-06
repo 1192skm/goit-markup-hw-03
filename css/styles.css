@@ -78,7 +78,9 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 .logo {
+    display: inline-block;
     text-decoration: none;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -94,11 +96,16 @@ body {
 }
 /* Navigation */
 .site-nav {
+    display: flex;
+
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--title-color)
+}
+.site-nav .item + .item {
+    margin-left: 40px;
 }
 .link:hover,
 .link:focus {
@@ -109,6 +116,13 @@ body {
 }
 
 /* Contacts */
+.contacts {
+    display: flex;
+    justify-content: flex-end;
+}
+.contacts .item + .item {
+    margin-left: 40px;
+}
 .contacts-link {
     font-weight: 400;
     font-size: 16px;
@@ -119,6 +133,7 @@ body {
 .contacts-link:hover {
     color:var(--primary-brand);
 }
+
 /* Hero */
 .hero {
     background-color: var(--heavybg-color);
@@ -159,20 +174,36 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-/* Section 2 */
+.skills-list {
+    display: flex;
+}
+.skills-list .item + .item {
+    margin-left: 24px;
+}
 .skills.section {
     padding-bottom: 0;
 }
 .subtitle {
     margin-bottom: 8px;
 }
-
+.skills-description {
+    max-width: 264px;
+}
+/* Section 2 */
+.featers {
+    display: flex;
+    justify-content: space-between;
+}
 /* Section 3 */
 .foto {
     margin-bottom: 32px;
 }
 .team {
     background-color: var(--lightbg-color);
+}
+.team-list {
+    display: flex;
+    justify-content: space-between;
 }
 .team-item {
     background-color: var(--bkg-color);
@@ -192,6 +223,7 @@ body {
     margin-bottom: 16px;
 }
 .footer .text {
+    max-width: 264px;
     color: var(--accent-color);
 }
 .footer .container {
