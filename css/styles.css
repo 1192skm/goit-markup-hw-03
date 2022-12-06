@@ -180,15 +180,13 @@ body {
     background-color: var(--heavybg-color);
 }
 .footer .logo {
+    display: inline-block;
     line-height: 1.17;
     color: var(--lightbg-color);
     margin-bottom: 16px;
-    background-color: teal;
 }
 .footer .text {
     color: var(--accent-color);
-    background-color: red;
-    /* margin-top: 16px; */
 }
 .footer .container {
     padding-top: 100px;
